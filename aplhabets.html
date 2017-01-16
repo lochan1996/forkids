@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ALPHABETS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="main.css">
+   <script src="js/login.js"></script>
+</head>
+<body>
+<nav class="nav navbar-inverse navbar-fixed-top">
+<div class="container-fluid">
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnavbar">
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	  </button>
+	  <a href="home.html" class="navbar-brand">MENU</a>
+	  </div>
+	  <div class="collapse navbar-collapse" id="mainnavbar">
+	  <ul class="nav  navbar-nav">
+	  <li class="active"><a href="home.html">Home</a></li>
+	  <li><a href="#">about us</a></li>
+	  <li><a href="#">contact us</a></li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">login <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="register.html">register</a></li>
+        <li><a href="forgot.html">forgot password</a></li>
+		<li class="divider"></li>
+      </ul>
+    </li>
+	</ul>
+	<ul class="nav navbar-nav navbar-center-right">
+	<button type="button" class="btn btn-success" data-toggle="modal" data-target="#popupwindow">already a member</button>
+         <div class="modal fade" id="popupwindow">
+		   <div class="modal-dialog">
+		   <div class="modal-content">
+		   <div class="modal-header">
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h3>LOG IN<h3>
+		   </div>
+		   <div class="modal-body">
+		   <form role="form">
+		   <div class="form-group">
+		   <input type="email" class="form-control" name="username" id="username" placeholder="email" onblur="onrequired()">
+		   </div>
+		     <div class="form-group">
+		   <input type="password" class="form-control" name="password" id="password" placeholder="password" onblur="isrequired()">
+		   </div>
+		   </form>
+		   </div>
+		   <div class="modal-footer">
+		    <button class="btn btn-primary" name="valid" value="login" id="submit" onclick="check()">log in</button>
+		   </div>
+		   </div>
+		   </div>
+		   </div>
+   </ul>
+	<ul class="nav navbar-nav navbar-right">
+	<li><a href="#">logout</a></li>
+	</ul>
+	</div>
+  </ul>
+</div>
+</nav> 
+<div id="ani">
+<ul id="rig">
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="http://lividinstruments.com/wp-content/uploads/2014/04/GuitarWing_image_02.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">guitar</span>
+			
+        </a>
+
+		     <audio id="audio" src="http://www.masterbits.de/sc_docu/sounds1/4GL6A004.MP3" preload="auto"> </audio>
+             <button class="button"  onclick="document.getElementById('audio').play();">Click Me</button>
+
+  </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="https://lh4.ggpht.com/gEJmMcDpageMHVCsRNHCZ7enJmspvOG4F0BUCK1rUP0iIYCJj8RUFqjR0wMGLWEnLMDz=w300">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">drums</span>
+        </a>
+			<audio id="audio1" src="http://www.gravomaster.com/alarm/sounds/tamtam.wav" preload="auto"  ></audio>
+      <button class="button"  onclick="document.getElementById('audio1').play();">Click Me</button>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="http://takelessons.com/blog/wp-content/uploads/2014/03/Kids-Playing-Piano.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Piano</span>
+        </a>
+				     <audio id="audio2" src="http://odur.let.rug.nl/~gilbers/onderwijs/fonologie_2/f2col9/f2c9ratemuziek_files/c7-b-m~1.wav" preload="auto"  ></audio>
+      <button class="button" onclick="document.getElementById('audio2').play();">Click Me</button>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="http://media.npr.org/assets/img/2012/06/19/istock_000007848197medium-eb1e545c8a26cde6cfa94708a8bbaf8e229a10ff-s900-c85.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">violin</span>
+        </a>
+		<audio id="audio3" src="http://www.notam02.no/DSP/lyder/fiolin.wav" preload="auto"  ></audio>
+      <button class="button" onclick="document.getElementById('audio3').play();">Click Me</button>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="http://vignette2.wikia.nocookie.net/dofus/images/d/db/Flute.png/revision/latest?cb=20081122191049">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">flute</span>
+        </a>
+            <audio id="audio4" src="http://archive.notam02.no/DSP02/sounds/floyte.wav" preload="auto"  ></audio>
+            <button class="button" onclick="document.getElementById('audio4').play();">Click Me</button>    </li>
+	</ul>
+
+</div>
+<style>
+#ani{
+margin-top:100px;
+}
+#rig {
+    max-width:900px;
+    margin:0 auto; /*center aligned*/
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+}
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:25%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+        
+/* The wrapper for each item */
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+        
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+	height:183px;
+}
+
+#rig li:hover .rig-img {
+    transform:scale(1.05);
+}
+        
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #3DC0F1 url(img/link.png) no-repeat center 20%;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#rig li:hover .rig-overlay {
+    opacity:0.8;
+}
+
+/* If have captions */
+.rig-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:18px;
+    font-weight:bold;
+    font-family: 'Oswald', sans-serif;
+    font-weight:normal!important;
+    top:40%;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+@media (max-width: 9000px) {
+    #rig li {
+        width:25%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:50%;
+    }
+}
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+</body>
+<html>

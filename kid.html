@@ -1,0 +1,250 @@
+<html>
+<head>
+ <title>KIDO</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="js/login.js"></script>
+   <script src="js/go.js"></script>
+<style>
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-0, .bgimg-1, .bgimg-2, .bgimg-3 , .bgimg-4{
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bgimg-1 {
+  background-image: url("http://www.hdwallpapers3d.com/wp-content/uploads/2013/05/cute_baby_in_love_8822.jpg");
+  min-height: 100%;
+}
+.bgimg-0 {
+  background-image: url("https://www.colourbox.com/preview/4778827-handsome-baby-boy-talking-on-the-phone.jpg");
+  min-height: 400px;
+}
+
+.bgimg-2 {
+  background-image: url("http://i.ytimg.com/vi/x8A8hBzNoQA/maxresdefault.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("https://i.ytimg.com/vi/a1GdistqItI/maxresdefault.jpg");
+  min-height: 400px;
+}
+.bgimg-4 {
+  background-image: url("data:image/jpeg;base64,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");
+  min-height: 100%;
+}
+
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  width:50%;
+  height:150px;
+  background:url(http://www.socialphy.org/wp-content/uploads/2015/07/musical-instruments-for-kids-1.jpg)
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.note {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  width:50%;
+  height:150px;
+  float:right;
+  background:url(http://3.bp.blogspot.com/-9wgYfxfkvRA/Viwg2W40EBI/AAAAAAAABxc/0KEn3Zmq7mg/s1600/Keulemans_Cuon_alpinus_javanicus.png)
+  
+}
+
+.note:hover {background-color: #3e8e41}
+
+.note:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+</head>
+<body>
+<nav class="nav navbar-inverse navbar-fixed-top">
+<div class="container-fluid">
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnavbar">
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	  </button>
+	  <a href="kid.html" class="navbar-brand">MENU</a>
+	  </div>
+	  <div class="collapse navbar-collapse" id="mainnavbar">
+	  <ul class="nav  navbar-nav">
+	  <li class="active"><a href="kid.html" >Home</a></li>
+	  <li><a href="#aboutus">about us</a></li>
+	  <li><a href="#contactus">contact us</a></li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">login <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="register.html">register</a></li>
+        <li><a href="forgot.html">forgot password</a></li>
+		<li class="divider"></li>
+      </ul>
+    </li>
+	</ul>
+	<ul class="nav navbar-nav navbar-center-right">
+	<button type="button" class="btn btn-success" data-toggle="modal" data-target="#popupwindow">already a member</button>
+         <div class="modal fade" id="popupwindow">
+		   <div class="modal-dialog">
+		   <div class="modal-content">
+		   <div class="modal-header">
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h3>LOG IN<h3>
+		   </div>
+		   <div class="modal-body">
+		   <form role="form">
+		   <div class="form-group">
+		   <input type="email" class="form-control" name="username" id="username" placeholder="email" onblur="onrequired()">
+		   </div>
+		     <div class="form-group">
+		   <input type="password" class="form-control" name="password" id="password" placeholder="password" onblur="isrequired()">
+		   </div>
+		   </form>
+		   </div>
+		   <div class="modal-footer">
+		    <button class="btn btn-primary" name="valid" value="login" id="submit" onclick="check()">log in</button>
+		   </div>
+		   </div>
+		   </div>
+		   </div>
+   </ul>
+	<ul class="nav navbar-nav navbar-right">
+	<li><a href="kid.html">logout</a></li>
+	</ul>
+	</div>
+  </ul>
+</div>
+</nav> 
+
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border">WELCOME</span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">about us</h3>
+<p id="aboutus">Founded in San Jose, California on February 18, 1997, KidSites.com is among the oldest sites for kids on the Internet. Since 1997, KidSites' primary mission has remained the same; to find and provide reviews for the best sites for kids on the Internet, and bring them together in one convenient location for our visitors.</p>
+  </div>
+  
+<div class="bgimg-0">
+  <div class="caption">
+    <span class="border">HELLO!!</span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">contact us</h3>
+<p id="contactus">##########</p>
+  </div>
+
+<div class="bgimg-2">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">CHOOSE BELOW</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+<button class="button" onclick="check1()"><h1 style="color:black">musical instruments</h3></button>
+<button class="note" onclick="check2()">animals</button>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LISTEN YOUR FAVUORITE MUSIC</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+     <ul id="playlist">
+        <li class="active"><a href="http://www.freeabcsongs.com/mp3/twinkle.mp3">twinkle twinkle little star </a></li>
+        <li><a href="http://www.dreamenglish.com/mp3/bingo.mp3">BINGO</a></li>
+        <li><a href="http://www.freeabcsongs.com/mp3/london.mp3">LONDON bridge is falling down</a></li>
+
+    </ul>
+  </div>
+</div>
+
+<div class="bgimg-4">
+  <div class="caption">
+   <span class="border">LIKE,SHARE,FOLLOW</span></br></br></br>
+   <button style="font-size:24px"><i class="fa fa-facebook-official" style="font-size:48px;color:blue"></i></button>
+    <button style="font-size:24px"><i class="fa fa-twitter" style="font-size:48px;color:#0080ff"></i></button>
+	    <button style="font-size:24px"><i class="fa fa-google-plus" style="font-size:48px;color:red"></i></button>
+
+  </div>
+</div>
+
+
+</body></html>

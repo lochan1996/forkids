@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>animal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="main.css">
+   <script src="js/login.js"></script>
+</head>
+<body>
+<nav class="nav navbar-inverse navbar-fixed-top">
+<div class="container-fluid">
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnavbar">
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	  <span class="icon-bar"></span>
+	  </button>
+	  <a href="home.html" class="navbar-brand">MENU</a>
+	  </div>
+	  <div class="collapse navbar-collapse" id="mainnavbar">
+	  <ul class="nav  navbar-nav">
+	  <li class="active"><a href="home.html">Home</a></li>
+	  <li><a href="about.html">about us</a></li>
+	  <li><a href="#">contact us</a></li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">login <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="register.html">register</a></li>
+        <li><a href="forgot.html">forgot password</a></li>
+		<li class="divider"></li>
+      </ul>
+    </li>
+	</ul>
+	<ul class="nav navbar-nav navbar-center-right">
+	<button type="button" class="btn btn-success" data-toggle="modal" data-target="#popupwindow">already a member</button>
+         <div class="modal fade" id="popupwindow">
+		   <div class="modal-dialog">
+		   <div class="modal-content">
+		   <div class="modal-header">
+		    <button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h3>LOG IN<h3>
+		   </div>
+		   <div class="modal-body">
+		   <form role="form">
+		   <div class="form-group">
+		   <input type="email" class="form-control" name="username" id="username" placeholder="email" onblur="onrequired()">
+		   </div>
+		     <div class="form-group">
+		   <input type="password" class="form-control" name="password" id="password" placeholder="password" onblur="isrequired()">
+		   </div>
+		   </form>
+		   </div>
+		   <div class="modal-footer">
+		    <button class="btn btn-primary" name="valid" value="login" id="submit" onclick="check()">log in</button>
+		   </div>
+		   </div>
+		   </div>
+		   </div>
+   </ul>
+	<ul class="nav navbar-nav navbar-right">
+	<li><a href="#">logout</a></li>
+	</ul>
+	</div>
+  </ul>
+</div>
+</nav> 
+<div id="ani">
+<ul id="rig">
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="https://a.dilcdn.com/bl/wp-content/uploads/sites/8/2012/05/small-puppy.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">DOG</span>
+			
+        </a>
+		    <audio id="audio" src="http://cd.textfiles.com/sigserieswin/SOUNDS/WAV/BARK2.WAV" preload="auto"  ></audio>
+             <button class="button"  onclick="document.getElementById('audio').play();">Click Me</button>
+
+  </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="http://img.wallpaperfolder.com/f/4906FECAEEAF/cute-baby-wild-cats.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">CAT</span>
+        </a>
+			<audio id="audio1" src="http://www.ringelkater.de/Sounds/2geraeusche_tiere/katze1.wav" preload="auto"  ></audio>
+      <button class="button"  onclick="document.getElementById('audio1').play();">Click Me</button>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="http://www.seocopywriting.com/wp-content/uploads/2012/05/Baby-PenguinSmall-Roundup053012.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">PENGUIN</span>
+        </a>
+				    <audio id="audio2" src="" preload="auto"  ></audio>
+      <button class="button" onclick="document.getElementById('audio2').play();">Click Me</button>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="http://us.123rf.com/450wm/oceanfishing/oceanfishing1501/oceanfishing150100395/35919664-small-monkey-and-his-mother.jpg?ver=6">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">MONKEY</span>
+        </a>
+		<audio id="audio3" src="http://www.4uall.net/free-sound-effects/Animal-Music-free-sound-effects/MONKEY_S.WAV" preload="auto"  ></audio>
+      <button class="button" onclick="document.getElementById('audio3').play();">Click Me</button>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="http://www.caribbeanpets.com/site/images/animals/small_animals/guinea_pigs/guinea_pigs_01L.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Guinea pig</span>
+        </a>
+				    <audio id="audio4" src="http://www.aracnet.com/~seagull/Guineas/sounds/wheeting.wav" preload="auto"  ></audio>
+      <button class="button" onclick="document.getElementById('audio4').play();">Click Me</button>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="https://ae01.alicdn.com/kf/HTB147JILFXXXXcIXXXXq6xXFXXXH/Free-shipping-Plush-font-b-toy-b-font-small-font-b-koala-b-font-font-b.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Koala bear</span>
+        </a>
+				    <audio id="audio5" src="http://northwestwildlife.com/wp-content/uploads/2013/12/grizzlybear.wav" preload="auto"  ></audio>
+      <button class="button" onclick="document.getElementById('audio5').play();">Click Me</button>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="https://thumbs.dreamstime.com/z/small-goat-21966571.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">GOAT</span>
+        </a>
+				    <audio id="audio6" src="http://www.4uall.net/free-sound-effects/Animal-Music-free-sound-effects/GOATS_3.WAV" preload="auto"  ></audio>
+      <button class="button" onclick="document.getElementById('audio6').play();">Click Me</button>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="https://s-media-cache-ak0.pinimg.com/736x/1b/d5/c5/1bd5c54786bd260bbc0b90c2066f7b82.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Rabbit</span>
+        </a>
+				    <audio id="audio7" src="http://www.cuttdowncalls.com/Wav-files/dying_rabbit_pred_call.wav" preload="auto"  ></audio>
+      <button class="button" onclick="document.getElementById('audio7').play();">Click Me</button>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="http://pictures.4ever.eu/data/download/animals/wildlife/small-tiger-156558.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Tiger</span>
+        </a>
+				    <audio id="audio8" src="http://files.anitalink.com/gamecache/hl/svencoop/sound/mw/bigcat.wav" preload="auto"  ></audio>
+      <button class="button" onclick="document.getElementById('audio8').play();">Click Me</button>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="http://www.thetoyroomonline.com.au/client-assets/aurora/yoohoo-wild/aurora-yoohoo-meerkat-small.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Meerkat</span>
+        </a>
+				    <audio id="audio9" src="" preload="auto"  ></audio>
+      <button class="button" onclick="document.getElementById('audio9').play();">Click Me</button>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="http://cl.jroo.me/z3/Q/F/i/e/a.baa-A-small-cute-Panda.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">PANDA</span>
+        </a>
+				    <audio id="audio10" src="" preload="auto"  ></audio>
+      <button class="button" onclick="document.getElementById('audio10').play();">Click Me</button>
+    </li>
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="http://fanny-pictures-site.com/wp-content/uploads/2014/11/baby-elephant-footballer_1.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Elephant</span>
+        </a>
+				    <audio id="audio11" src="http://www.eletech.com/Products/Kiddie_Ride_Boards/elephant.wav" preload="auto"  ></audio>
+      <button class="button" onclick="document.getElementById('audio11').play();">Click Me</button>
+    </li>
+</ul>
+</div>
+<style>
+#ani{
+margin-top:100px;
+}
+#rig {
+    max-width:900px;
+    margin:0 auto; /*center aligned*/
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+}
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:25%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+        
+/* The wrapper for each item */
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+        
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+	height:183px;
+}
+
+#rig li:hover .rig-img {
+    transform:scale(1.05);
+}
+        
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #3DC0F1 url(img/link.png) no-repeat center 20%;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#rig li:hover .rig-overlay {
+    opacity:0.8;
+}
+
+/* If have captions */
+.rig-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:18px;
+    font-weight:bold;
+    font-family: 'Oswald', sans-serif;
+    font-weight:normal!important;
+    top:40%;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+@media (max-width: 9000px) {
+    #rig li {
+        width:25%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:50%;
+    }
+}
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+
+
+</body>
+<html>
